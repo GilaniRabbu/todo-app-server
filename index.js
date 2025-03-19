@@ -12,7 +12,7 @@ dotenv.config();
 connectBD();
 
 app.use(express.json());
-app.use(bodyParser.urlencoded({ extended: true }))
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/v1/user", userRouter);
 

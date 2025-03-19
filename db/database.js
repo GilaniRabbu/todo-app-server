@@ -7,6 +7,6 @@ const connectBD = async () => {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 export default connectBD;

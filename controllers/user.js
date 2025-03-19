@@ -65,4 +65,4 @@ export const login = async (req, res) => {
   } catch (error) {
     console.log(error);
   }
-}
+};
