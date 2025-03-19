@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import connectBD from "./db/database.js";
 import userRouter from "./routes/user.js";
+import todoRouter from "./routes/todo.js";
 
 const app = express();
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/todo", todoRouter);
 
 app.get("/", (req, res) => {
   res.send("<h1>Hello, World!</h1>");
